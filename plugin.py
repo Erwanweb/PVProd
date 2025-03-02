@@ -184,7 +184,7 @@ class BasePlugin:
         nbtemps = len(listintemps)
         if nbtemps > 0:
             self.EnergyCons = round(sum(listintemps) / nbtemps)
-            Devices[1].Update(nValue=0,sValue=str(self.EnergyCons))  # update the dummy device showing the current value
+            Devices[1].Update(nValue=0,sValue="{};0".format(str(self.EnergyCons)))   # update the dummy device showing the current value
         else:
             Domoticz.Debug("No E Meter found... ")
             noerror = False
