@@ -173,7 +173,7 @@ class BasePlugin:
                     if "Usage" in device:
                         Domoticz.Debug("device: {}-{} = {}".format(device["idx"], device["Name"], device["Usage"]))
                         texte = (device["Usage"])
-                        valeur = texte.replace("watts", "").strip()
+                        valeur = texte.replace("watt", "").strip()
                         Domoticz.Debug(f"E Meter value: {valeur}")
                         #return int(valeur)
                         listintemps.append(int(valeur))
