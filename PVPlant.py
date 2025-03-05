@@ -1,0 +1,8 @@
+# PV Pant variables
+#
+LATITUDE = '41.57387'
+LONGITUDE = '2.48982'
+DECLINATION = '45'
+AZIMUTH = '70'
+KWP = '8'
+#---- END
